@@ -5,7 +5,20 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
-public class fajar07176_GUI extends fajar07176_komponen{
+public class fajar07176_GUI extends JFrame{
+    JLabel judul = new JLabel("CUCI MOBIL & MOTOR");
+    JLabel nomer = new JLabel("Nomer");
+    JLabel pemilik = new JLabel("Pemilik");
+    JLabel merek = new JLabel("Merek");
+    JLabel warna = new JLabel("Warna");
+    JTextField nomertext = new JTextField();
+    JTextField pemiliktext = new JTextField();
+    JTextField merektext = new JTextField();
+    JTextField warnatext = new JTextField();
+    JButton create = new JButton("Create");
+    JButton view = new JButton("Tampilkan Data");
+    JRadioButton datamotor = new JRadioButton("Data Motor");
+    JRadioButton datamobil = new JRadioButton("Data Mobil");
     public fajar07176_GUI(){
         setSize(600, 600);
         setLayout(null);

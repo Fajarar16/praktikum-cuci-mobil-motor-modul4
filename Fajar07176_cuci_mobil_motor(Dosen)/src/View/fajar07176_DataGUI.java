@@ -8,8 +8,24 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.*;
-public class fajar07176_DataGUI extends fajar07176_komponen{
+public class fajar07176_DataGUI extends JFrame{
     private static KendaraanController07176 kendaraan07176 = new KendaraanController07176();
+    JTable tabeldata = new JTable();
+    JScrollPane scroll = new JScrollPane(tabeldata);
+    JLabel judulatas = new JLabel("Tampilan Data Kendaraan");
+    JLabel Nomer = new JLabel("Nomor");
+    JLabel Pemilik = new JLabel("Nama Pemilik");
+    JLabel Merek = new JLabel("Merek");
+    JLabel Warna = new JLabel("Warna");
+    JRadioButton radiomotor = new JRadioButton("Data Motor");
+    JRadioButton radiomobil = new JRadioButton("Data Mobil");
+    JButton hapus = new JButton("Hapus");
+    JButton update = new JButton("Update");
+    JButton back = new JButton("Back");
+    JTextField textNomor = new JTextField();
+    JTextField textPemilik = new JTextField();
+    JTextField textMerek = new JTextField();
+    JTextField textWarna = new JTextField();
     public fajar07176_DataGUI(){
         setSize(600, 600);
         setLayout(null);
